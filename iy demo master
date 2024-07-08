@@ -10459,7 +10459,7 @@ addcmd("bang", {"rape"}, function(args, speaker)
 		local players = getPlayer(args[1], speaker)
 		for _, v in pairs(players) do
 			local bangplr = Players[v].Name
-			local bangOffet = CFrame.new(0, 0, -1.1)
+			local bangOffet = CFrame.new(0, 0, -2.5)
 			bangLoop = RunService.Stepped:Connect(function()
 				pcall(function()
 					local otherRoot = getTorso(Players[bangplr].Character)
